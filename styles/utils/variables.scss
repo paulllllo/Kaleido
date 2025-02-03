@@ -1,0 +1,10 @@
+$color-white: #fff;
+$color-black: #000;
+
+$ease-out-expo: cubic-beizer(0.19, 1, 0.22, 1);
+
+$z-indexes: (
+//  'preloader',
+ 'navigation',
+ 'content',
+ 'canvas');

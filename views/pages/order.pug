@@ -1,0 +1,152 @@
+extends ../base.pug
+
+block variables
+    - var template = 'order'
+
+block content
+    .order
+        .order_wrapper
+            .order_preview
+                .order_preview_box
+                    img(src='preview1.jpg')
+
+            .order_info
+                h1.order_info_slug='Make it yours'
+
+                .order_nav
+                    .order_nav_link
+                        span.order_nav_link_text='type'
+                    .order_nav_link
+                        span.order_nav_link_text='color'
+                    .order_nav_link
+                        span.order_nav_link_text='size'
+                    .order_nav_link
+                        span.order_nav_link_text='battery'
+                    .order_nav_link
+                        span.order_nav_link_text='summary'
+                
+
+                .order_sections(data-lenis-prevent)
+                    form.order_section(class='order_type')
+                        .order_type_choice
+                            .order_type_choice_media
+                                input.order_type_choice_input(type='checkbox' id='check_box1' data_price='1200')
+
+                                label.order_type_choice_label(for='check_box1')
+                                    
+                                .order_type_choice_shadow
+                                
+                                img.order_type_choice_image(src='headset_type1.jpg' class='home_choice_image')
+
+                                .order_type_choice_mark
+                        
+                            .order_type_choice_details
+                                span.order_type_choice_tag='k1'
+                                span.order_type_choice_desc='The K1 kaleido is the oldest in the bunch, also the most grounded'
+
+                        .order_type_choice
+                            .order_type_choice_media
+                                input.order_type_choice_input(type='checkbox' id='check_box2' data_price='1500')
+
+                                label.order_type_choice_label(for='check_box2')
+                                    
+                                .order_type_choice_shadow
+                                
+                                img.order_type_choice_image(src='headset_type2.jpg' class='home_choice_image')
+
+                                .order_type_choice_mark
+
+                            .order_type_choice_details
+                                span.order_type_choice_tag='k2'
+                                span.order_type_choice_desc='The K2 kaleido is the oldest in the bunch, also the most grounded'
+
+                    form.order_section(class='order_color')
+                        .order_type_choice
+                            .order_type_choice_media
+                                input.order_type_choice_input(type='checkbox' id='check_box3' data_price='0')
+
+                                label.order_type_choice_label(for='check_box3')
+                                    
+                                .order_type_choice_shadow
+                                
+                                img.order_type_choice_image(src='headset_type3.jpeg' class='home_choice_image')
+
+                                .order_type_choice_mark
+                        
+                            .order_type_choice_details
+                                span.order_type_choice_tag='k1'
+                                span.order_type_choice_desc='The K1 kaleido is the oldest in the bunch, also the most grounded'
+
+                        .order_type_choice
+                            .order_type_choice_media
+                                input.order_type_choice_input(type='checkbox' id='check_box4' data_price='500')
+
+                                label.order_type_choice_label(for='check_box4')
+                                    
+                                .order_type_choice_shadow
+                                
+                                img.order_type_choice_image(src='headset_type4.jpg' class='home_choice_image')
+
+                                .order_type_choice_mark
+
+                            .order_type_choice_details
+                                span.order_type_choice_tag='k2'
+                                span.order_type_choice_desc='The K2 kaleido is the oldest in the bunch, also the most grounded'
+
+                    form.order_section(class='order_size')
+                        .order_type_choice
+                            .order_type_choice_media
+                                input.order_type_choice_input(type='checkbox' id='check_box5' data_price='0')
+
+                                label.order_type_choice_label(for='check_box5')
+                                    
+                                .order_type_choice_shadow
+                                
+                                img.order_type_choice_image(src='headset_type5.jpg' class='home_choice_image')
+
+                                .order_type_choice_mark
+                        
+                            .order_type_choice_details
+                                span.order_type_choice_tag='Normal'
+                                span.order_type_choice_desc='Get a 4 x 12 Kaleido'
+
+                        .order_type_choice
+                            .order_type_choice_media
+                                input.order_type_choice_input(type='checkbox' id='check_box6' data_price='700')
+
+                                label.order_type_choice_label(for='check_box6')
+                                    
+                                .order_type_choice_shadow
+                                
+                                img.order_type_choice_image(src='headset_type6.jpeg' class='home_choice_image')
+
+                                .order_type_choice_mark
+
+                            .order_type_choice_details
+                                span.order_type_choice_tag='Large'
+                                span.order_type_choice_desc='The 5 x 12 shaped kaleido for a bigger experience'
+                
+
+                .order_total_area
+                    .order_subtotal
+                        h3.order_subtotal_text='subtotal:'
+
+                        span.subtotal_price
+                            | $
+                            span.order_subtotal_price='0'
+
+                    .order_next_area
+                        .order_prev
+                            .order_arrow(class='order_prev_arrow')
+                                svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
+                                    path(d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z")
+
+                            span.order_next_text='Prev'
+
+                        .order_next
+                            span.order_next_text='Next'
+
+                            .order_arrow(class='order_next_arrow')
+                                svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
+                                    path(d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z")
+

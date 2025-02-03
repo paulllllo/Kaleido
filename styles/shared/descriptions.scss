@@ -1,0 +1,9 @@
+%description-18 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @include media('<phone') {
+        font-size: 2.8rem;
+    }
+}

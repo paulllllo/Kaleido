@@ -1,0 +1,8 @@
+.navigation{
+    @extend %cover;
+
+    color: null;
+    pointer-events: none;
+    position: fixed;
+    z-index: z('navigation');
+}

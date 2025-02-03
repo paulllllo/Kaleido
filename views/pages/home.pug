@@ -1,0 +1,432 @@
+extends ../base.pug
+
+block variables
+    - var template = 'home'
+
+block content
+    .home
+        section.home_hero
+            .home_nav
+                .home_dropdown
+                    .home_dropdown_wrapper
+                        .home_dropdown_links
+                            a.home_dropdown_link='Cases'
+                            a.home_dropdown_link='Technology'
+                            a.home_dropdown_link='Service'
+                            a.home_dropdown_link='About'
+                            a.home_dropdown_link='Contact'
+
+                        .home_dropdown_contacts
+                            .home_dropdown_contact_info
+                                span.home_dropdown_contact_email='Info@kaleido.com'
+
+                                span.home_dropdown_contact_phone='8130394202'
+                            
+                            p.home_dropdown_contact_address='965 Reserve Dr, Roseville, CA 95678'
+
+                            .home_dropdown_contact_socials
+                                a='Instagram'
+                                a='Facebook'
+                                a='LinkedIn'
+
+                .home_nav_wrapper
+                    .home_logo
+                        svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512")
+                            path(d="M180.7 4.7c6.2-6.2 16.4-6.2 22.6 0l80 80c2.5 2.5 4.1 5.8 4.6 9.3l40.2 322L55.9 416 96.1 94c.4-3.5 2-6.8 4.6-9.3l80-80zM152 272c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0zM32 448l320 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32s14.3-32 32-32z")
+
+                    .home_nav_right
+                        button.home_order_button='order now'
+                        button.home_menu
+                            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
+                                path(d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z")
+
+            .home_hero_text
+                p(data-animation='waveWord')
+                    | Kaleido - A new world 
+                    | beyond
+                    //- span.alt-font beyond
+                    |  that brings your dreams super close to reality
+
+            .home_hero_media
+                .home_hero_media_wrapper
+                    .home_hero_shadow
+
+                    img.home_hero_image(src='hero1.png')
+
+            .home_hero_button
+                span='Need help'
+
+        section.home_second
+            .home_second_tiny
+                .home_second_tiny_text
+                    p='Remember when your dream vanished?, you can see it clearly with kaleido'
+
+            .home_second_large
+                .home_second_large_text
+                    p(data-animation='waveWord')='Start exploring your dreams in high definition'
+
+        section.home_third
+            .home_third_media
+                img(src='third1.jpg')
+            
+            .home_third_triangle(class='triangle_up')
+                .home_triangle_inner
+
+            .home_third_triangle(class='triangle_down')
+                .home_triangle_inner
+
+        section.home_horizontal
+            .home_horizontal_pinner
+                .home_horizontal_wrapper
+                    .home_horizontal_one(class='home_horizontal_section')
+                        .home_horizontal_title
+                            span.home_horizontal_number='1'
+                            h1.home_horizontal_name='Work'
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor1.jpeg')
+
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor2.jpg')
+
+                    .home_horizontal_two(class='home_horizontal_section')
+                        .home_horizontal_title
+                            span.home_horizontal_number='2'
+                            h1.home_horizontal_name='Relax'
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor3.jpeg')
+
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor4.jpg')
+
+                    .home_horizontal_three(class='home_horizontal_section')
+                        .home_horizontal_title
+                            span.home_horizontal_number='3'
+                            h1.home_horizontal_name='Online Meetings'
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor5.jpg')
+
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor6.jpg')
+
+                    .home_horizontal_four(class='home_horizontal_section')
+                        .home_horizontal_title
+                            span.home_horizontal_number='4'
+                            h1.home_horizontal_name='Or Shower?'
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor7.jpg')
+
+                        .home_horizontal_media
+                            .home_horizontal_media_wrapper
+                                .home_horizontal_media_triangle
+
+                                .home_horizontal_image
+                                    img(src='hor8.jpg')
+
+        section.home_overview
+            .home_overview_titlearea
+                .home_second_tiny
+                    .home_second_tiny_text
+                        p='You need to know Kaleido a little better?'
+
+                .home_second_large
+                    .home_second_large_text
+                        p(data-animation='waveWord')='Let\'s start with a quick overview'
+
+            .home_overview_details
+                .home_overview_details_wrapper
+                    .home_overview_detail
+                        .home_overview_detail_icon_wrapper
+                            .home_overview_detail_icon
+                        
+                        .home_overview_detail_text
+                            h3.home_overview_detail_title(data-animation='waveWord')='Small and Big'
+
+                            span.home_overview_detail_desc='3x3 and 4x4 yd sizes. Fits easily even when there is not much space in the yard.'
+
+                    .home_overview_detail
+                        .home_overview_detail_icon_wrapper
+                            .home_overview_detail_icon
+                        
+                        .home_overview_detail_text
+                            h3.home_overview_detail_title(data-animation='waveWord')='Legally easy'
+
+                            span.home_overview_detail_desc='3x3 and 4x4 yd sizes. Fits easily even when there is not much space in the yard.'
+
+                    .home_overview_detail
+                        .home_overview_detail_icon_wrapper
+                            .home_overview_detail_icon
+                        
+                        .home_overview_detail_text
+                            h3.home_overview_detail_title(data-animation='waveWord')='5 Year warranty'
+
+                            span.home_overview_detail_desc='3x3 and 4x4 yd sizes. Fits easily even when there is not much space in the yard.'
+
+                    .home_overview_detail
+                        .home_overview_detail_icon_wrapper
+                            .home_overview_detail_icon
+                        
+                        .home_overview_detail_text
+                            h3.home_overview_detail_title(data-animation='waveWord')='Assembly help'
+
+                            span.home_overview_detail_desc='3x3 and 4x4 yd sizes. Fits easily even when there is not much space in the yard.'
+
+        section.home_parts
+            .home_parts_title
+                h1(data-animation='waveWord')='Quality In Every Single Component'
+            
+            .home_parts_wrapper
+                .home_parts_slice
+                    .home_part(class='home_part_one')
+                        .home_part_wrapper
+                            .home_part_media
+                                .home_part_media_wrapper
+                                    .home_part_media_triangle
+
+                                    .home_part_image
+                                        img(src='part1.jpg')
+                        
+                            .home_part_text
+                                h3='All-inclusive setup'
+
+                                p='you can easily choose the option that is right just for you.'
+                    
+                    .home_part(class='home_part_two')
+                        .home_part_wrapper
+                            .home_part_media
+                                .home_part_media_wrapper
+                                    .home_part_media_triangle
+
+                                    .home_part_image
+                                        img(src='part2.jpg')
+
+                            .home_part_text
+                                h3(data-animation='waveWord')='Ergonomic Design'
+
+                                p='you can easily choose the option that is right just for you.'
+
+                .home_parts_slice
+                    .home_part_textonly
+                        .home_part_tiny
+                            .home_part_tiny_text
+                                p='Feel free to adapt and customize'
+
+                        .home_part_tiny_two
+                            .home_part_tiny_two_text
+                                p='Kaleido does not need to be registered and no additional permits needed. So it’s easy to order & to set up.'
+                    
+                    .home_part(class='home_part_three')
+                        .home_part_wrapper
+                            .home_part_media
+                                .home_part_media_wrapper
+                                    .home_part_media_triangle
+
+                                    .home_part_image
+                                        img(src='part3.jpg')
+
+                            .home_part_text
+                                h3(data-animation='waveWord')='Haptically Pleasing'
+
+                                p='you can easily choose the option that is right just for you.'
+
+                .home_parts_slice
+                    .home_part(class='home_part_four')
+                        .home_part_wrapper
+                            .home_part_media
+                                .home_part_media_wrapper
+                                    .home_part_media_triangle
+
+                                    .home_part_image
+                                        img(src='part4.jpg')
+
+                            .home_part_text
+                                h3(data-animation='waveWord')='Tightly Secured In Place'
+
+                                p='you can easily choose the option that is right just for you.'
+
+                    .home_part_textonly_end
+                        .home_part_textonly
+                            .home_part_tiny
+                                .home_part_tiny_text
+                                    p='Feel free to adapt and customize'
+
+                            .home_part_tiny_two
+                                .home_part_tiny_two_text
+                                    p='Kaleido does not need to be registered and no additional permits needed. So it\’s easy to order & to set up.'
+
+        section.home_steps
+            .home_steps_titlearea
+                .home_second_tiny
+                    .home_second_tiny_text
+                        p(data-animation='waveWord')='Lets Look at the order steps'
+
+                .home_second_large
+                    .home_second_large_text
+                        p(data-animation='waveWord')='Getting your Kaleido is super easy'
+
+            .home_steps_wrapper
+                .home_step
+                    p.home_step_duration='A few minutes'
+
+                    .home_step_numberarea
+                        .home_step_number
+                            span='1'
+                        
+                        .home_step_line
+                    
+                    h3.home_step_title='Choose the base or custom Kaleido'
+
+                    p.home_step_desc='Explore options to see all the customization possibilities and give us a call.'
+
+                .home_step
+                    p.home_step_duration='A few more minutes'
+
+                    .home_step_numberarea
+                        .home_step_number
+                            span='2'
+                        
+                        .home_step_line
+                    
+                    h3.home_step_title='Talk to our manager'
+
+                    p.home_step_desc='Speak all your questions with our specialist, deal with any specific points or custom options.'
+
+                .home_step
+                    p.home_step_duration='up to just 3 months'
+
+                    .home_step_numberarea
+                        .home_step_number
+                            span='3'
+                        
+                        .home_step_line
+                    
+                    h3.home_step_title='Wait for production and installation'
+
+                    p.home_step_desc
+                        | The manager will schedule production dates, and help select a proven team of assemblers.
+                        br
+                        | Then, Our associates assembly professionals will expertly assemble your cube.
+
+                .home_step
+                    p.home_step_duration='For a long-long time'
+
+                    .home_step_numberarea
+                        .home_step_number
+                            span='4'
+                        
+                        .home_step_line
+                    
+                    h3.home_step_title='Enjoy your Kaleido'
+
+                    p.home_step_desc="Take care of your to-do's and leave headset's maintenance on us. But if one of your tasks becomes to change a wall for a window — drop us a notice."
+
+                .home_step
+                    p.home_step_duration='we believe you will'
+
+                    .home_step_numberarea
+                        .home_step_number
+                            span='5'
+                        
+                        .home_step_line
+                    
+                    h3.home_step_title='Return for a new one'
+
+                    p.home_step_desc='Explore options to see all the customization possibilities and give us a call.'
+
+        section.home_model
+            .home_model_background
+                .home_model_text
+                    p(data-animation='waveWord')='A new way to dream'
+                
+                .home_model_media
+                    img(src='model1.png')
+            
+            .home_third_triangle(class='triangle_up')
+                .home_triangle_inner
+
+            .home_third_triangle(class='triangle_down')
+                .home_triangle_inner
+
+        h1.home_cta(data-animation='waveWord')='Click here to order your Kaleido'
+
+        section.home_footer
+            .home_footer_contact
+                .home_footer_socials
+                    p.home_footer_socials_title='Join our socials'
+
+                    a.home_social_link='Instagram'
+                    a.home_social_link='Facebook'
+                    a.home_social_link='LinkedIn'
+                
+                .home_footer_info
+                    p.home_socials_time='Monday-Friday, 9am-6pm'
+
+                    a.home_socials_email='info@kaleido.com'
+
+                    p.home_socials_avail='We respond within a few hours'
+
+                    a.home_socials_phone='9130394202'
+
+                    p.home_socials_address
+                        | 975 Reserve Dr,
+                        br
+                        | Roseville,
+                        br
+                        | CA 95678
+
+            .home_footer_message
+                p.home_footer_message_title(data-animation='waveWord')='Leave a request and we\'ll call you.'
+
+                form.home_footer_message_form
+                    .home_footer_input
+                        span='Full name'
+
+                        input(type='text' placeholder='Name' required )
+
+                    .home_footer_input
+                        span='Full name'
+
+                        input(type='text' placeholder='Name' required )
+
+                    .home_footer_input
+                        span='Full name'
+
+                        input(type='text' placeholder='Name' required )
+                    
+                    button.home_request_btn(type='submit')='Leave a request'
+
+            .home_footer_rights
+                span.home_footer_right='Kaleido, INC. 2024'
+                span.home_footer_right='Terms and conditions'
+                span.home_footer_right='Cookies Policy'
+                span.home_footer_right='Warranty agreement'
+                span.home_footer_right='Crafted by KC'
+            
+
