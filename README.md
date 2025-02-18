@@ -1,4 +1,4 @@
 # Kaleido
 
-An landing page for futuristic high resolution VR headsets
+A landing page for futuristic high resolution VR headsets
 
