@@ -21,7 +21,7 @@ const logger = require('morgan')
 const UAParser = require('ua-parser-js')
 
 const app = express()
-const port = 3000
+const port = 5000
 
 app.use(logger('dev'))
 app.use(bodyParser.json())

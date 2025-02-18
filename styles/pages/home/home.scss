@@ -50,9 +50,16 @@
     // overflow: hidden;
     background: #293232;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2rem;
-    gap: 34vw;
+    justify-content: flex-end;
+    gap: 64vw;
+
+    @include media('>=phone') {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 34vw;
+    }
 }
 
 .home_dropdown_links {
@@ -80,13 +87,15 @@
     height: 100%;
     width: 15rem;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .home_dropdown_contact_info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
+    text-decoration: underline;
 }
 
 // .home_dropdown_contact_email {
@@ -107,6 +116,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
+    text-decoration: underline;
 }
 
 .home_dropdown_contact_socials a {
@@ -118,8 +129,8 @@
 }
 
 .home_logo {
-    width: 8rem;
-    height: 8rem;
+    width: max(60px, 8rem);
+    height: max(60px, 8rem);
     background: white;
     border-radius: 10px;
     border: 4px solid #97b8b9;
@@ -152,18 +163,23 @@
 .home_order_button {
     padding: 0 20px;
     background-color: #fff;
-    height: 8rem;
+    height: max(60px, 8rem);
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 100;
     border: 4px solid #97b8b9;
     border-radius: 10px;
     cursor: pointer;
+    display: none;
+
+    @include media('>=tablet') {
+        display: block
+    }
 }
 
 .home_menu {
-    width: 8rem;
-    height: 8rem;
+    width: max(60px, 8rem);
+    height: max(60px, 8rem);
     background: white;
     border-radius: 10px;
     display: flex;

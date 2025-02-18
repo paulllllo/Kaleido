@@ -18,20 +18,43 @@
     height: 100vh;
     display: flex;
     flex: column;
+    position: relative;
+}
+
+.order_continue {
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 15px 25px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    display: block;
+
+    @include media('>=phone') {
+        display: none;
+    }
 }
 
 .order_preview {
-    width: 65%;
+    width: 100%;
     height: 100%;
     background: #242222;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include media('>=phone') {
+        position: static;
+        width: 65%;
+    }
 }
 
 .order_preview_box {
-    width: 50vh;
+    width: min(50vh, 100vw);
     aspect-ratio: 1 / 1;
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     overflow: hidden;
@@ -44,10 +67,19 @@
 }
 
 .order_info {
-    width: 35%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    right: 0;
+    width: 90%;
+    z-index: 5;
+    background: #161515;
+
+    @include media('>=phone') {
+        position: static;
+        width: 35%;
+    }
 }
 
 .order_info_slug {
@@ -264,12 +296,16 @@
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
+    position: relative;
     // background: #fff;
 }
 
 .order_arrow svg {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .order_arrow path {

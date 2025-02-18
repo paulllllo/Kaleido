@@ -14,7 +14,10 @@ export default class Order extends Page {
                 previewBox: '.order_preview_box',
                 prevButton: '.order_prev',
                 nextButton: '.order_next',
-                totalPriceSpan: '.order_subtotal_price'
+                totalPriceSpan: '.order_subtotal_price',
+                infoArea: '.order_info',
+                previewArea: '.order_preview',
+                continueButton: '.order_continue'
             }
         })
 
@@ -34,9 +37,11 @@ export default class Order extends Page {
         this.totalPrice = 0
         const previewImage = this.elements.previewBox.querySelector('img')
 
-        this.currentSection = 1
-
         const tl = GSAP.timeline()
+
+        this.initMobileModal()
+
+        this.currentSection = 1
 
         this.changeSection(this.currentSection)
 
@@ -159,5 +164,43 @@ export default class Order extends Page {
                 }, 0)
             }
         })
+    }
+
+    initMobileModal () {
+        const widthX = window.innerWidth
+        const device = widthX > 768 ? widthX > 1024 ? 'desktop' : 'tablet' : 'mobile'
+
+        if (device === 'mobile') {
+            this.modalOpen = false
+            GSAP.set(this.elements.infoArea, { xPercent: 100 })
+
+            this.elements.continueButton.addEventListener('click', (e) => {
+                e.preventDefault()
+
+                this.toggleModal()
+            })
+
+            this.elements.previewArea.addEventListener('click', () => {
+                if (this.modalOpen === true) {
+                    this.toggleModal()
+                }
+            })
+        }
+    }
+
+    toggleModal () {
+        if (this.modalOpen) {
+            GSAP.to(this.elements.infoArea, {
+                xPercent: 100
+            })
+
+            this.modalOpen = false
+        } else {
+            GSAP.to(this.elements.infoArea, {
+                xPercent: 0
+            })
+
+            this.modalOpen = true
+        }
     }
 }
